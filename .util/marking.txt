@@ -2,36 +2,36 @@
 platform linux -- Python 3.12.13, pytest-9.0.3, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Networking-Week-1-main/Assessment-Networking-Week-1-main
 plugins: requests-mock-1.12.1
-collected 91 items
+collected 90 items
 
-test_postcode_cache.py FFFFFFFFFFFFF                                     [ 14%]
-test_postcode_cli.py FFF.FFFFFFFFFFFFFFFFFFFFF.F.....                    [ 49%]
-test_postcode_functions.py FFFFFFFFFF...FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 98%]
-F                                                                        [100%]
+test_postcode_cache.py FFFFFFFFF....                                     [ 14%]
+test_postcode_cli.py ...............................                     [ 48%]
+test_postcode_functions.py ..........................................FFF [ 98%]
+.                                                                        [100%]
 
-======================== 81 failed, 10 passed in 0.79s =========================
+======================== 12 failed, 78 passed in 5.74s =========================
 ************* Module postcode_cli
-postcode_cli.py:7:0: C0304: Final newline missing (missing-final-newline)
-postcode_cli.py:3:0: W0611: Unused ArgumentParser imported from argparse (unused-import)
+postcode_cli.py:7:0: C0116: Missing function or method docstring (missing-function-docstring)
+postcode_cli.py:22:15: W0718: Catching too general exception Exception (broad-exception-caught)
+postcode_cli.py:33:15: W0718: Catching too general exception Exception (broad-exception-caught)
 ************* Module postcode_functions
-postcode_functions.py:12:4: W2301: Unnecessary ellipsis constant (unnecessary-ellipsis)
-postcode_functions.py:18:4: W2301: Unnecessary ellipsis constant (unnecessary-ellipsis)
-postcode_functions.py:15:15: W0613: Unused argument 'cache' (unused-argument)
-postcode_functions.py:22:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:22:22: W0613: Unused argument 'postcode' (unused-argument)
-postcode_functions.py:26:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:26:30: W0613: Unused argument 'lat' (unused-argument)
-postcode_functions.py:26:42: W0613: Unused argument 'long' (unused-argument)
-postcode_functions.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:30:29: W0613: Unused argument 'postcode_start' (unused-argument)
-postcode_functions.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:34:26: W0613: Unused argument 'postcodes' (unused-argument)
+postcode_functions.py:15:11: W0718: Catching too general exception Exception (broad-exception-caught)
+postcode_functions.py:31:4: C0103: Variable name "URL" doesn't conform to snake_case naming style (invalid-name)
+postcode_functions.py:38:7: C0121: Comparison 'postcode_data['result'] == False' should be 'postcode_data['result'] is False' if checking for the singleton value False, or 'not postcode_data['result']' if testing for falsiness (singleton-comparison)
+postcode_functions.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+postcode_functions.py:47:4: C0103: Variable name "URL" doesn't conform to snake_case naming style (invalid-name)
+postcode_functions.py:54:7: C0121: Comparison 'long_lat_data['result'] == None' should be 'long_lat_data['result'] is None' (singleton-comparison)
+postcode_functions.py:60:0: C0116: Missing function or method docstring (missing-function-docstring)
+postcode_functions.py:64:4: C0103: Variable name "URL" doesn't conform to snake_case naming style (invalid-name)
+postcode_functions.py:71:7: C0121: Comparison 'postcode_completions['result'] == None' should be 'postcode_completions['result'] is None' (singleton-comparison)
+postcode_functions.py:76:0: C0116: Missing function or method docstring (missing-function-docstring)
+postcode_functions.py:83:8: C0103: Variable name "URL" doesn't conform to snake_case naming style (invalid-name)
+postcode_functions.py:92:8: W0104: Statement seems to have no effect (pointless-statement)
+postcode_functions.py:92:8: E1136: Value 'result.append' is unsubscriptable (unsubscriptable-object)
 postcode_functions.py:4:0: C0411: standard import "os" should be placed before third party import "requests" (wrong-import-order)
 postcode_functions.py:5:0: C0411: standard import "json" should be placed before third party import "requests" (wrong-import-order)
-postcode_functions.py:3:0: W0611: Unused requests imported as req (unused-import)
 postcode_functions.py:4:0: W0611: Unused import os (unused-import)
-postcode_functions.py:5:0: W0611: Unused import json (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 7.70/10 (previous run: 7.70/10, +0.00)
 
